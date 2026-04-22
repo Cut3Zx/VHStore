@@ -1,3 +1,4 @@
+
 class Cart {
     constructor() {
         this.items = [];
@@ -24,7 +25,7 @@ class Cart {
                 quantity: 1
             });
         }
-        
+
         this.saveToStorage();
     }
 
@@ -73,3 +74,4 @@ class Cart {
         }
     }
 }
+//
