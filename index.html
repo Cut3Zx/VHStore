@@ -33,7 +33,6 @@
             </div>
         </nav>
     </header>
-
     <section class="hero" aria-label="Banner giới thiệu">
         <div class="hero-content">
             <div class="hero-badge"> Công nghệ mới nhất 2024</div>
@@ -56,9 +55,7 @@
             </div>
         </div>
     </section>
-
     <main class="container" id="products">
-
         <div class="section-header">
             <h2 class="section-title"> Sản Phẩm</h2>
             <span class="product-count-label" id="product-count">16 sản phẩm</span>
@@ -72,17 +69,9 @@
         </div>
 
         <div class="product-grid" id="product-grid" aria-label="Danh sách sản phẩm">
-            
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer-brand">VH Tech Store</div>
-        <p>© 2024 VH Tech Store. Tất cả quyền được bảo lưu.</p>
-        <p style="margin-top:0.5rem; font-size:0.78rem; color:#3a3f5a;">
-            Hotline: 1800-VH-TECH &nbsp;|&nbsp; Email: support@vhtech.vn &nbsp;|&nbsp; TP. Hồ Chí Minh, Việt Nam
-        </p>
-    </footer>
 
     <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
 
@@ -93,7 +82,6 @@
         </div>
 
         <div class="cart-items" id="cart-items">
-            
         </div>
 
         <div class="cart-footer">
@@ -124,9 +112,7 @@
                 <button class="close-btn" id="close-checkout" aria-label="Đóng">✕</button>
             </div>
             <div class="modal-body">
-
                 <div id="checkout-summary"></div>
-
                 <div class="form-section">
                     <h3> Thông Tin Giao Hàng</h3>
                     <form id="checkout-form" novalidate>
@@ -160,7 +146,6 @@
             </div>
         </div>
     </div>
-
     <div class="modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title">
         <div class="modal-box success-modal-box">
             <div class="modal-body" style="padding: 2.5rem;">
@@ -168,14 +153,12 @@
                 <h2 id="success-title">Đặt Hàng Thành Công!</h2>
                 <p>Cảm ơn bạn đã tin tưởng VH Tech Store.</p>
                 <p>Chúng tôi sẽ liên hệ xác nhận trong vòng 30 phút.</p>
-
                 <div class="order-id-box">
                     <small>Mã đơn hàng của bạn</small>
                     <div class="order-id" id="success-order-id">VH-XXXXXX</div>
                     <small style="margin-top:0.5rem; display:block;">Tổng tiền: <strong id="success-total">0
                             ₫</strong></small>
                 </div>
-
                 <button class="btn-submit" id="close-success">
                     Về Trang Chủ
                 </button>
@@ -185,9 +168,7 @@
             </div>
         </div>
     </div>
-
     <div class="toast-container" id="toast-container" aria-live="polite"></div>
-
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="js/Cart.js"></script>
     <script src="js/Product.js"></script>
