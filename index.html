@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VH Tech Store — Cửa hàng công nghệ uy tín: laptop, điện thoại, phụ kiện chính hãng với giá tốt nhất.">
+    <meta name="description"
+        content="VH Tech Store — Cửa hàng công nghệ uy tín: laptop, điện thoại, phụ kiện chính hãng với giá tốt nhất.">
     <title>VH Tech Store — Cửa Hàng Công Nghệ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- ══════════════════════════════════════════
-         NAVBAR
-    ══════════════════════════════════════════ -->
     <header>
         <nav class="navbar">
             <a class="navbar-brand" href="#" aria-label="VH Tech Store trang chủ">
@@ -20,32 +20,26 @@
             </a>
 
             <div class="navbar-search">
-                <span class="search-icon">🔍</span>
-                <input
-                    type="search"
-                    id="search-input"
-                    placeholder="Tìm kiếm laptop, điện thoại, phụ kiện..."
-                    aria-label="Tìm kiếm sản phẩm"
-                >
+                <span class="search-icon"></span>
+                <input type="search" id="search-input" placeholder="Tìm kiếm laptop, điện thoại, phụ kiện..."
+                    aria-label="Tìm kiếm sản phẩm">
             </div>
 
             <div class="navbar-right">
                 <button class="cart-btn" id="cart-btn" aria-label="Mở giỏ hàng">
-                    🛒 Giỏ hàng
+                    Giỏ hàng
                     <span class="cart-count hidden" id="cart-count">0</span>
                 </button>
             </div>
         </nav>
     </header>
 
-    <!-- ══════════════════════════════════════════
-         HERO
-    ══════════════════════════════════════════ -->
     <section class="hero" aria-label="Banner giới thiệu">
         <div class="hero-content">
-            <div class="hero-badge">✨ Công nghệ mới nhất 2024</div>
+            <div class="hero-badge"> Công nghệ mới nhất 2024</div>
             <h1>Trải nghiệm<br><span>Công Nghệ Đỉnh Cao</span></h1>
-            <p>Laptop, điện thoại và phụ kiện chính hãng từ các thương hiệu hàng đầu thế giới. Giao hàng toàn quốc, hỗ trợ 24/7.</p>
+            <p>Laptop, điện thoại và phụ kiện chính hãng từ các thương hiệu hàng đầu thế giới. Giao hàng toàn quốc, hỗ
+                trợ 24/7.</p>
             <div class="hero-stats">
                 <div class="stat-item">
                     <div class="stat-value">200+</div>
@@ -63,14 +57,10 @@
         </div>
     </section>
 
-    <!-- ══════════════════════════════════════════
-         MAIN CONTENT
-    ══════════════════════════════════════════ -->
     <main class="container" id="products">
 
-        <!-- Bộ lọc danh mục -->
         <div class="section-header">
-            <h2 class="section-title">🛍️ Sản Phẩm</h2>
+            <h2 class="section-title"> Sản Phẩm</h2>
             <span class="product-count-label" id="product-count">16 sản phẩm</span>
         </div>
 
@@ -81,15 +71,11 @@
             <button class="category-btn" data-category="accessory" id="cat-accessory">🎧 Phụ kiện</button>
         </div>
 
-        <!-- Lưới sản phẩm -->
         <div class="product-grid" id="product-grid" aria-label="Danh sách sản phẩm">
-            <!-- Được render bằng JavaScript -->
+            
         </div>
     </main>
 
-    <!-- ══════════════════════════════════════════
-         FOOTER
-    ══════════════════════════════════════════ -->
     <footer class="footer">
         <div class="footer-brand">VH Tech Store</div>
         <p>© 2024 VH Tech Store. Tất cả quyền được bảo lưu.</p>
@@ -98,9 +84,6 @@
         </p>
     </footer>
 
-    <!-- ══════════════════════════════════════════
-         CART SIDEBAR
-    ══════════════════════════════════════════ -->
     <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
 
     <aside class="cart-sidebar" id="cart-sidebar" aria-label="Giỏ hàng">
@@ -110,7 +93,7 @@
         </div>
 
         <div class="cart-items" id="cart-items">
-            <!-- Được render bằng JavaScript -->
+            
         </div>
 
         <div class="cart-footer">
@@ -129,14 +112,11 @@
                 </div>
             </div>
             <button class="btn-checkout" id="checkout-btn">
-                💳 Tiến Hành Thanh Toán
+                Tiến Hành Thanh Toán
             </button>
         </div>
     </aside>
 
-    <!-- ══════════════════════════════════════════
-         MODAL: THANH TOÁN
-    ══════════════════════════════════════════ -->
     <div class="modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
         <div class="modal-box">
             <div class="modal-header">
@@ -145,53 +125,35 @@
             </div>
             <div class="modal-body">
 
-                <!-- Tóm tắt đơn hàng -->
                 <div id="checkout-summary"></div>
 
-                <!-- Form thông tin khách hàng -->
                 <div class="form-section">
-                    <h3>📦 Thông Tin Giao Hàng</h3>
+                    <h3> Thông Tin Giao Hàng</h3>
                     <form id="checkout-form" novalidate>
                         <div class="form-group">
                             <label for="cust-name">Họ và tên *</label>
-                            <input
-                                type="text"
-                                id="cust-name"
-                                placeholder="Nguyễn Văn A"
-                                required
-                                minlength="2"
-                            >
+                            <input type="text" id="cust-name" placeholder="Nguyễn Văn A" required minlength="2">
                         </div>
                         <div class="form-group">
                             <label for="cust-phone">Số điện thoại *</label>
-                            <input
-                                type="tel"
-                                id="cust-phone"
-                                placeholder="0901 234 567"
-                                required
-                                pattern="[0-9]{9,11}"
-                            >
+                            <input type="tel" id="cust-phone" placeholder="0901 234 567" required pattern="[0-9]{9,11}">
                         </div>
                         <div class="form-group">
                             <label for="cust-address">Địa chỉ giao hàng *</label>
-                            <input
-                                type="text"
-                                id="cust-address"
-                                placeholder="Số nhà, đường, phường, quận, thành phố"
-                                required
-                            >
+                            <input type="text" id="cust-address" placeholder="Số nhà, đường, phường, quận, thành phố"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="cust-payment">Phương thức thanh toán</label>
                             <select id="cust-payment">
-                                <option value="cod">💵 Thanh toán khi nhận hàng (COD)</option>
-                                <option value="transfer">🏦 Chuyển khoản ngân hàng</option>
-                                <option value="momo">📲 Ví MoMo</option>
-                                <option value="vnpay">💳 VNPay</option>
+                                <option value="cod"> Thanh toán khi nhận hàng (COD)</option>
+                                <option value="transfer"> Chuyển khoản ngân hàng</option>
+                                <option value="momo"> Ví MoMo</option>
+                                <option value="vnpay"> VNPay</option>
                             </select>
                         </div>
                         <button type="submit" class="btn-submit" id="submit-order">
-                            ✅ Xác Nhận Đặt Hàng
+                            Xác Nhận Đặt Hàng
                         </button>
                     </form>
                 </div>
@@ -199,13 +161,10 @@
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════════
-         MODAL: ĐẶT HÀNG THÀNH CÔNG
-    ══════════════════════════════════════════ -->
     <div class="modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title">
         <div class="modal-box success-modal-box">
             <div class="modal-body" style="padding: 2.5rem;">
-                <div class="success-icon">🎉</div>
+                <div class="success-icon"></div>
                 <h2 id="success-title">Đặt Hàng Thành Công!</h2>
                 <p>Cảm ơn bạn đã tin tưởng VH Tech Store.</p>
                 <p>Chúng tôi sẽ liên hệ xác nhận trong vòng 30 phút.</p>
@@ -213,11 +172,12 @@
                 <div class="order-id-box">
                     <small>Mã đơn hàng của bạn</small>
                     <div class="order-id" id="success-order-id">VH-XXXXXX</div>
-                    <small style="margin-top:0.5rem; display:block;">Tổng tiền: <strong id="success-total">0 ₫</strong></small>
+                    <small style="margin-top:0.5rem; display:block;">Tổng tiền: <strong id="success-total">0
+                            ₫</strong></small>
                 </div>
 
                 <button class="btn-submit" id="close-success">
-                    🎁 Về Trang Chủ
+                    Về Trang Chủ
                 </button>
                 <button class="btn-continue" id="continue-shopping">
                     Tiếp Tục Mua Sắm
@@ -226,15 +186,8 @@
         </div>
     </div>
 
-    <!-- ══════════════════════════════════════════
-         TOAST NOTIFICATIONS
-    ══════════════════════════════════════════ -->
     <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
-    <!-- ══════════════════════════════════════════
-    <!-- ══════════════════════════════════════════
-         JAVASCRIPT — OOP Đơn Giản (MVC 3 Lớp)
-    ══════════════════════════════════════════ -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="js/Cart.js"></script>
     <script src="js/Product.js"></script>
@@ -243,4 +196,5 @@
     <script src="js/Store.js"></script>
 
 </body>
+
 </html>

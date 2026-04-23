@@ -44,7 +44,7 @@ class UIManager {
         let khuVucMua = document.getElementById('cart-items');
         let txtTongTien = document.getElementById('cart-total');
         let iconSoLuong = document.getElementById('cart-count');
-        
+
         let cartItems = cart.items;
 
         if (cartItems.length === 0) {
@@ -105,7 +105,7 @@ class UIManager {
         document.getElementById(modalId).classList.add('show');
     }
 
-    hideModal(modalId) {
+    closeModal(modalId) {
         document.getElementById(modalId).classList.remove('show');
     }
 
